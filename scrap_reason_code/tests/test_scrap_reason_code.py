@@ -30,14 +30,16 @@ class StockScrap(TransactionCase):
         self.scrap_product = self.env["product.product"].create(
             {
                 "name": "Scrap Product A",
-                "type": "product",
+                "type": "consu",
+                "is_storable": True,
                 "categ_id": self.categ_1.id,
             }
         )
         self.scrap_product_2 = self.env["product.product"].create(
             {
                 "name": "Scrap Product A",
-                "type": "product",
+                "type": "consu",
+                "is_storable": True,
                 "categ_id": self.categ_2.id,
             }
         )
